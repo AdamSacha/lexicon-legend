@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <title>Lexicon Legend</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="game-section">
+        <div class="header">
+          <div id="game-mode-container">
+            <h1>Lexicon Legend</h1>
+            <div class="mode-controls">
+              <span id="game-mode">Daily Challenge</span>
+              <button id="toggle-mode">Switch Mode</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-content">
+          <div class="square-grid">
+            <div class="square" id="square1"></div>
+            <div class="square" id="square2"></div>
+            <div class="square" id="square3"></div>
+            <div class="square center" id="center-square"></div>
+            <div class="square" id="square4"></div>
+            <div class="square" id="square5"></div>
+            <div class="square" id="square6"></div>
+          </div>
+
+          <div class="controls">
+            <div class="message-display" id="message"></div>
+            <div class="word-display" id="current-word"></div>
+            <div class="buttons">
+              <button id="shuffle">Shuffle</button>
+              <button id="new-game">New Game</button>
+              <button id="finish">Finish</button>
+              <button id="submit">Submit</button>
+              <button id="clear">Clear</button>
+            </div>
+            <div class="found-words" id="found-words">
+              <h3>Found Words</h3>
+              <div class="word-list" id="found-words-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ladder-section">
+        <h2>Achievement Ladder</h2>
+        <div class="level-ladder">
+          <div class="level-step" data-level="1">
+            <span class="level-name">Lexicon Legend</span>
+            <span class="level-line"></span>
+            <span class="points" id="points-1">-</span>
+          </div>
+          <div class="level-step" data-level="2">
+            <span class="level-name">Vocabulary Virtuoso</span>
+            <span class="level-line"></span>
+            <span class="points" id="points-2">-</span>
+          </div>
+          <div class="level-step" data-level="3">
+            <span class="level-name">Letter Luminary</span>
+            <span class="level-line"></span>
+            <span class="points" id="points-3">-</span>
+          </div>
+          <div class="level-step" data-level="4">
+            <span class="level-name">Spelling Sage</span>
+            <span class="level-line"></span>
+            <span class="points" id="points-4">-</span>
+          </div>
+          <div class="level-step" data-level="5">
+            <span class="level-name">Language Mystic</span>
+            <span class="level-line"></span>
+            <span class="points" id="points-5">-</span>
+          </div>
+          <div class="level-step" data-level="6">
+            <span class="level-name">Quill Master</span>
+            <span class="level-line"></span>
+            <span class="points" id="points-6">-</span>
+          </div>
+          <div class="level-step" data-level="7">
+            <span class="level-name">Runekeeper</span>
+            <span class="level-line"></span>
+            <span class="points" id="points-7">-</span>
+          </div>
+          <div class="level-step" data-level="8">
+            <span class="level-name">Scribe</span>
+            <span class="level-line"></span>
+            <span class="points" id="points-8">-</span>
+          </div>
+          <div class="level-step" data-level="9">
+            <span class="level-name">Apprentice</span>
+            <span class="level-line"></span>
+            <span class="points" id="points-9">-</span>
+          </div>
+          <div class="level-step" data-level="10">
+            <span class="level-name">Novice</span>
+            <span class="level-line"></span>
+            <span class="points" id="points-10">-</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="debug-overlay" id="debug-overlay"></div>
+      <div id="debug-panel"></div>
+      <div class="game-complete-overlay" id="game-complete-overlay"></div>
+      <div class="game-complete" id="game-complete">
+        <h3>Game Complete!</h3>
+        <div class="final-score-container">
+          <div class="score-text">
+            Score: <span id="final-score">0</span>/<span id="max-score">0</span>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="final-progress"></div>
+        </div>
+        <div class="missing-words">
+          <h4>Missing Words:</h4>
+          <div id="missing-words-list"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
